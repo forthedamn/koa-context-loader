@@ -1,0 +1,59 @@
+{
+  "name": "koa-context-loader",
+  "description": "load anything to koa context",
+  "version": "1.0.0",
+  "author": "zhongguoxin <zhoguoxin@126.com>",
+  "bugs": {
+    "url": "https://github.com/forthedamn/koa-context-loader/issues",
+    "email": "zhoguoxin@126.com"
+  },
+  "contributors": [
+    "zhongguoxin <zhoguoxin@126.com>"
+  ],
+  "dependencies": {
+    "assert": "^1.4.1",
+    "is-type-of": "^1.2.0",
+    "loading": "^1.13.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^22.0.4",
+    "koa": "^2.4.1",
+    "supertest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=8.3"
+  },
+  "homepage": "https://github.com/forthedamn/koa-context-loader",
+  "keywords": [
+    "koa",
+    "context",
+    "file load",
+    "koa-context-loader"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "jest": {
+    "testMatch": [
+      "**/test/**/*.test.js"
+    ],
+    "coverageReporters": [
+      "text-summary",
+      "lcov"
+    ],
+    "forceExit": true,
+    "bail": true,
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/forthedamn/koa-context-loader"
+  },
+  "scripts": {
+    "ci": "npm run test -- --coverage",
+    "test": "jest",
+    "cov": "npm run ci && code"
+  }
+}
