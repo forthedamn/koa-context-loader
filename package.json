@@ -1,7 +1,7 @@
 {
   "name": "koa-context-loader",
   "description": "load anything to koa context",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "zhongguoxin <zhoguoxin@126.com>",
   "bugs": {
     "url": "https://github.com/forthedamn/koa-context-loader/issues",
@@ -16,6 +16,7 @@
     "loading": "^1.13.3"
   },
   "devDependencies": {
+    "codecov": "^3.0.0",
     "eslint": "^4.14.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
@@ -54,6 +55,6 @@
   "scripts": {
     "ci": "npm run test -- --coverage",
     "test": "jest",
-    "cov": "npm run ci && code"
+    "cov": "npm run ci && codecov"
   }
 }
